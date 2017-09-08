@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="plugins/layui/css/layui.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+
+	<body>
+		<section>
+			个人资料页面
+			<button type="button">打开修改密码页面</button>
+		</section>
+		<script type="text/javascript" src="../plugins/layui/layui.js"></script>
+		<script>
+			layui.use(['layer', 'form' , 'jquery'], function() {
+				var layer = layui.layer,
+					form = layui.form,
+					$ = layui.jquery;
+					
+					$("button").click(function(){
+						parent.$("#pass").click();
+					});
+				
+			});
+		</script>
+	</body>
+
+</html>
